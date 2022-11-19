@@ -1,15 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import { Player } from './components/Player';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
 root.render(
   <React.StrictMode>
-    <App />
+    <Player video='https://vwaw360.cda.pl/k2KSFN7ePwcNTpZgRQONzw/1668931435/hd911cdd8c783b28ec1bd8441f91b640d7.mp4' />
   </React.StrictMode>
 );
 
