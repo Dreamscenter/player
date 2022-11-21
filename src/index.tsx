@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import { Player } from './components/Player';
+import { Player } from './components/Player/Player';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <Player video='https://vwaw360.cda.pl/k2KSFN7ePwcNTpZgRQONzw/1668931435/hd911cdd8c783b28ec1bd8441f91b640d7.mp4' />
+    <Player video='https://vcze104.cda.pl/b4GJOmDYGiTpWijJlYJagA/1669107112/hd85825e272ae18b5def4db59f1229d904.mp4' />
   </React.StrictMode>
 );
 
