@@ -1,8 +1,8 @@
-.Player {
+.player {
     height: 100%;
 }
 
-.VideoPlayerContainer {
+.videoPlayerContainer {
     position: absolute;
     height: 100%;
     width: 100%;

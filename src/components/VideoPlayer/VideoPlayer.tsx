@@ -29,7 +29,7 @@ export function VideoPlayer({ video, setViewModel }: VideoPlayerProps) {
   }
 
   return (
-    <div className={styles.VideoPlayer}>
+    <div className={styles.videoPlayer}>
       <video src={video} autoPlay={true} onTimeUpdate={onTimeUpdate} ref={videoRef} />
     </div>
   );

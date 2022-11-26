@@ -23,10 +23,10 @@ export function Player({ video }: PlayerProps) {
   }
 
   return (
-    <div className={styles.Player} onClick={onClick}>
+    <div className={styles.player} onClick={onClick}>
       <Overlay progressPercentage={progressPercentage} />
 
-      <div className={styles.VideoPlayerContainer}>
+      <div className={styles.videoPlayerContainer}>
         <VideoPlayer video={video} setViewModel={setViewModel} />
       </div>
     </div>

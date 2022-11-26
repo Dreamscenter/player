@@ -8,12 +8,12 @@ export type OverlayProps = {
 
 export function Overlay({ progressPercentage }: OverlayProps) {
   return (
-    <div className={styles.Overlay}>
-      <div className={styles.ProgressBarContainer}>
+    <div className={styles.overlay}>
+      <div className={styles.progressBarContainer}>
         <ProgressBar progressPercentage={progressPercentage} />
       </div>
 
-      <div className={styles.Shadow} />
+      <div className={styles.shadow} />
     </div>
   );
 }

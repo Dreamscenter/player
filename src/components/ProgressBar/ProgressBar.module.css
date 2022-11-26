@@ -1,6 +1,6 @@
-.ProgressBar {
+.progressBar {
     background-color: #333333;
-    height: 17px;
+    height: 16px;
     border-radius: 100vh;
     position: relative;
     display: flex;
@@ -8,23 +8,3 @@
     justify-content: center;
 }
 
-.ProgressContainer {
-    overflow: clip;
-    height: 100%;
-    border-radius: inherit;
-}
-
-.Progress {
-    background-color: #FF5C00;
-    height: 100%;
-    border-radius: inherit;
-    position: relative;
-}
-
-.ProgressShadow {
-    content: '';
-    display: block;
-    position: absolute;
-    box-shadow: 0 -2px 10px 1px rgba(255, 92, 0, 0.4), 0 2px 20px 1px rgba(255, 92, 0, 0.4);
-    height: 15%;
-}

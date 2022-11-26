@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './ProgressBar.module.css';
+import { Progress } from './Progress/Progress';
 
 
 type ProgressBarProps = {
@@ -7,12 +8,11 @@ type ProgressBarProps = {
 };
 
 export function ProgressBar({ progressPercentage }: ProgressBarProps) {
+  const height = 16;
+
   return (
-    <div className={styles.ProgressBar}>
-      <div className={styles.ProgressShadow} style={{ width: `${progressPercentage}%` }} />
-      <div className={styles.ProgressContainer}>
-        <div className={styles.Progress} style={{ width: `${progressPercentage}%` }} />
-      </div>
+    <div className={styles.progressBar} style={{ height: `${height}px` }}>
+      <Progress percentage={progressPercentage} height={height} />
     </div>
   );
 }
