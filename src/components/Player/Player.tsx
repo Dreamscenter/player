@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './Player.module.css';
 import { Overlay } from '../Overlay/Overlay';
 import { VideoPlayer } from '../VideoPlayer/VideoPlayer';
@@ -10,7 +10,7 @@ export type PlayerProps = {
 }
 
 export function Player({ video }: PlayerProps) {
-  const [viewModel, setViewModel] = React.useState<PlayerViewModel | null>(null);
+  const [viewModel, setViewModel] = useState<PlayerViewModel | null>(null);
   const progressPercentage = useObservable(viewModel?.progressPercentage) ?? 0;
   const isPlaying = useObservable(viewModel?.isPlaying) ?? true;
 
@@ -23,8 +23,9 @@ export function Player({ video }: PlayerProps) {
   }
 
   return (
-    <div className={styles.player} onClick={onClick}>
-      <Overlay progressPercentage={progressPercentage} />
+    <div className={styles.Player} onClick={onClick}>
+      <Overlay progressPercentage={progressPercentage}
+               onSeek={progressPercentage => viewModel?.seek(progressPercentage)} />
 
       <div className={styles.videoPlayerContainer}>
         <VideoPlayer video={video} setViewModel={setViewModel} />

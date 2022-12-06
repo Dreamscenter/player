@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <Player video='https://vcze303.cda.pl/iSmeuk8D7uy-1gUuSWEN_Q/1669514961/hdb3138ccfc8beb79301efe3d791ca6a1d.mp4' />
+    <Player video='https://vwaw368.cda.pl/x3Q-noh2CNhuWag1WK_fuw/1670396865/hd1cf07eb8f69b5e82d295199fecde4ee7.mp4' />
   </React.StrictMode>
 );
 

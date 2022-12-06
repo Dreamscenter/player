@@ -2,18 +2,20 @@ import { Observable, Subject } from 'rxjs';
 
 export interface PlayerViewModel {
   progressPercentage?: Observable<number>;
-  isPlaying?: Observable<boolean>;
+  isPlaying: Observable<boolean>;
 
   play(): void;
 
   pause(): void;
+  seek(progressPercentage: number): void;
 }
 
 export class MutablePlayerViewModel implements PlayerViewModel {
-  progressPercentage?: Subject<number> = new Subject<number>();
-  isPlaying?: Subject<boolean> = new Subject<boolean>();
-  playEvent: Subject<void> = new Subject();
-  pauseEvent: Subject<void> = new Subject();
+  progressPercentage = new Subject<number>();
+  isPlaying = new Subject<boolean>();
+  playEvent = new Subject<void>();
+  pauseEvent = new Subject<void>();
+  seekEvent = new Subject<number>();
 
   play(): void {
     this.playEvent.next();
@@ -21,5 +23,9 @@ export class MutablePlayerViewModel implements PlayerViewModel {
 
   pause(): void {
     this.pauseEvent.next();
+  }
+
+  seek(progressPercentage: number): void {
+    this.seekEvent.next(progressPercentage);
   }
 }
