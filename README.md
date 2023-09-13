@@ -29,7 +29,7 @@ Dodatkowo wspieramy również linki do filmów zamieszczonych w serwisie **CDA.p
 
 Interfejs Dreamscenter jest minimalistyczny i prosty w użytkowaniu.
 
-Dostosowuje się w zależności od rodzaju użądzenia i wielkości ekranu.
+Dostosowuje się w zależności od rodzaju urządzenia i wielkości ekranu.
 
 ## Brak reklam
 
