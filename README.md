@@ -1,6 +1,6 @@
 # Dreamscenter Player
 
-Dreamscenter to nowoczesny internetowy odtwarzacz filmów. Możesz bardzo łatwo zintegrować go ze swoją stroną z filmami.
+Dreamscenter to nowoczesny internetowy odtwarzacz filmów. Możesz bardzo łatwo zintegrować go ze swoją stroną internową.
 
 
 ![obraz](https://github.com/Dreamscenter/player/assets/144959407/26c0aa8d-b1bd-4269-becc-2c1ee2ef6710)
