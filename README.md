@@ -7,13 +7,12 @@ Dreamscenter to nowoczesny internetowy odtwarzacz filmów. Możesz bardzo łatwo
 
 **Spis treści:**
 1. Funkcje:
-  - [Kompatybilność](#kompatybilność)
-  - [Nowoczesny wygląd](#nowoczesny-wygląd)
-  - [Brak reklam](#brak-reklam)
-  - [Przycisk pomijania czołówki](#przycisk-pomijania-czołówki)
-  - [Wspólne Oglądanie](#wspólne-oglądanie)
-  - [Kastomizacja](#kastomizacja)
-
+   - [Kompatybilność](#kompatybilność)
+   - [Nowoczesny wygląd](#nowoczesny-wygląd)
+   - [Brak reklam](#brak-reklam)
+   - [Przycisk pomijania czołówki](#przycisk-pomijania-czołówki)
+   - [Wspólne Oglądanie](#wspólne-oglądanie)
+   - [Kastomizacja](#kastomizacja)
 2. [Instrukcja](#instrukcja)
 
 # Funckje
@@ -52,4 +51,31 @@ Funkcja Wspólnego Oglądania umożliwia użytkownikom oglądać filmy na odleg�
 Dzięki możliwości zmiany koloru przewodniego możesz łatwo dopasować odtwarzacz do kolorystyki swojej strony.
 
 # Instrukcja
+Osadzenie Dreamscenter na twojej stronie jest bardzo proste. Wystarczy, że dodasz ten fragment HTML:
+```html
+<iframe src="https://dreamscenter.app/player?url=[link do filmu]&color=[twój kolor]"
+        allowfullscreen
+        allow="clipboard-write" # To uprawnienie jest potrzebne, by działał przycisk kopiowania linku do sesji Wspólnego Oglądania
+        width="747" height="420"/>
+```
 
+Np.
+```html
+<iframe src="https://dreamscenter.app/player?url=https://myvideo.com/ab77d&color=00FF14"
+        allowfullscreen
+        allow="clipboard-write"
+        width="747" height="420"/>
+```
+
+Kolor musi być 6 cyfrowym kodem hex.
+
+### Przycisk pomijania czołówki (opcjonalne)
+By wyświelić przycisk pomijania czołówki dodaj również czas jej rozpoczęcia i zakończenia:
+```html
+<iframe src="https://dreamscenter.app/player?url=[link do filmu]&color=[twój kolor]"&opening=00:20-01:30
+        allowfullscreen
+        allow="clipboard-write"
+        width="747" height="420"/>
+```
+
+Użycie atrybutu `opening=00:20-01:30` spowoduje, że przycisk przycisk pomijania czołówki pokaże się w 20 sekundzie filmu, a naciśnięcie go spowoduje przewinie do czasu 01:30.
