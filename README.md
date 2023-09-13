@@ -78,4 +78,4 @@ By wyświelić przycisk pomijania czołówki dodaj również czas jej rozpoczęc
         width="747" height="420"/>
 ```
 
-Użycie atrybutu `opening=00:20-01:30` spowoduje, że przycisk przycisk pomijania czołówki pokaże się w 20 sekundzie filmu, a naciśnięcie go spowoduje przewinie do czasu 01:30.
+Użycie atrybutu `opening=00:20-01:30` spowoduje, że przycisk pomijania czołówki pokaże się w 20 sekundzie filmu, a naciśnięcie go spowoduje przewinie do czasu 01:30.
