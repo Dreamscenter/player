@@ -15,7 +15,7 @@ Dreamscenter to nowoczesny internetowy odtwarzacz filmów. Możesz bardzo łatwo
    - [Kastomizacja](#kastomizacja)
 2. [Instrukcja](#instrukcja)
 
-# Funckje
+# Funkcje
 
 ## Kompatybilność
 ![obraz](https://github.com/Dreamscenter/player/assets/144959407/3e34e730-f790-476d-8233-ebd44432cc9a)
@@ -78,4 +78,4 @@ By wyświelić przycisk pomijania czołówki dodaj również czas jej rozpoczęc
         width="747" height="420"/>
 ```
 
-Użycie atrybutu `opening=00:20-01:30` spowoduje, że przycisk pomijania czołówki pokaże się w 20 sekundzie filmu, a naciśnięcie go spowoduje przewinie do czasu 01:30.
+Użycie atrybutu `opening=00:20-01:30` spowoduje, że przycisk pomijania czołówki pokaże się w 20 sekundzie filmu, a naciśnięcie go spowoduje przewinięcie do czasu 01:30.
