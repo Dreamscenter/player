@@ -43,7 +43,7 @@ Dzięki przyciskowi pomijania czołówki użytkownicy mogą szybciej przejść d
 ## Wspólne Oglądanie
 ![obraz](https://github.com/Dreamscenter/player/assets/144959407/a056e363-df0a-4587-8335-1486296623ec)
 
-Funkcja Wspólnego Oglądania umożliwia użytkownikom oglądać filmy na odległość. Każdy może zatrzymać i przewinąć film, a automatyczna synchronizacja sprawia, że każdy zawsze widzi tą samą scenę filmu.
+Funkcja Wspólnego Oglądania umożliwia użytkownikom oglądać filmy na odległość. Każdy może zatrzymać i przewinąć film, a automatyczna synchronizacja sprawia, że każdy zawsze widzi tę samą scenę filmu.
 
 ## Kastomizacja
 ![obraz](https://github.com/Dreamscenter/player/assets/144959407/7351d493-5976-408f-8544-42660172834d)
@@ -72,7 +72,7 @@ Kolor musi być 6 cyfrowym kodem hex.
 ### Przycisk pomijania czołówki (opcjonalne)
 By wyświelić przycisk pomijania czołówki dodaj również czas jej rozpoczęcia i zakończenia:
 ```html
-<iframe src="https://dreamscenter.app/player?url=[link do filmu]&color=[twój kolor]"&opening=00:20-01:30
+<iframe src="https://dreamscenter.app/player?url=[link do filmu]&color=[twój kolor]&opening=00:20-01:30"
         allowfullscreen
         allow="clipboard-write"
         width="747" height="420"/>
