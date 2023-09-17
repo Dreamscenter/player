@@ -61,7 +61,7 @@ Osadzenie Dreamscenter na twojej stronie jest bardzo proste. Wystarczy, że doda
 
 Np.
 ```html
-<iframe src="https://dreamscenter.app/player?url=https://myvideo.com/ab77d&color=00FF14"
+<iframe src="https://dreamscenter.app/player?url=myvideo.com/ab77d&color=00FF14"
         allowfullscreen
         allow="clipboard-write"
         width="747" height="420"/>
@@ -72,10 +72,10 @@ Kolor musi być 6 cyfrowym kodem hex.
 ### Przycisk pomijania czołówki (opcjonalne)
 By wyświelić przycisk pomijania czołówki dodaj również czas jej rozpoczęcia i zakończenia:
 ```html
-<iframe src="https://dreamscenter.app/player?url=[link do filmu]&color=[twój kolor]&opening=00:20-01:30"
+<iframe src="https://dreamscenter.app/player?url=[link do filmu]&color=[twój kolor]&opening=00;20-01;30"
         allowfullscreen
         allow="clipboard-write"
         width="747" height="420"/>
 ```
 
-Użycie atrybutu `opening=00:20-01:30` spowoduje, że przycisk pomijania czołówki pokaże się w 20 sekundzie filmu, a naciśnięcie go spowoduje przewinięcie do czasu 01:30.
+Użycie atrybutu `opening=00;20-01;30` spowoduje, że przycisk pomijania czołówki pokaże się w 20 sekundzie filmu, a naciśnięcie go spowoduje przewinięcie do czasu 01:30.
