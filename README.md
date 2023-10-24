@@ -53,7 +53,7 @@ Dzięki możliwości zmiany koloru przewodniego możesz łatwo dopasować odtwar
 # Instrukcja
 Osadzenie Dreamscenter na twojej stronie jest bardzo proste. Wystarczy, że dodasz ten fragment HTML:
 ```html
-<iframe src="https://dreamscenter.app/player?url=[link do filmu]&color=[twój kolor]"
+<iframe src="https://dreamscenter.com/player?url=[link do filmu]&color=[twój kolor]"
         allowfullscreen
         allow="clipboard-write" # To uprawnienie jest potrzebne, by działał przycisk kopiowania linku do sesji Wspólnego Oglądania
         width="747" height="420"/>
@@ -61,7 +61,7 @@ Osadzenie Dreamscenter na twojej stronie jest bardzo proste. Wystarczy, że doda
 
 Np.
 ```html
-<iframe src="https://dreamscenter.app/player?url=myvideo.com/ab77d&color=00FF14"
+<iframe src="https://dreamscenter.com/player?url=myvideo.com/ab77d&color=00FF14"
         allowfullscreen
         allow="clipboard-write"
         width="747" height="420"/>
@@ -72,7 +72,7 @@ Kolor musi być 6 cyfrowym kodem hex.
 ### Przycisk pomijania czołówki (opcjonalne)
 By wyświelić przycisk pomijania czołówki dodaj również czas jej rozpoczęcia i zakończenia:
 ```html
-<iframe src="https://dreamscenter.app/player?url=[link do filmu]&color=[twój kolor]&opening=00;20-01;30"
+<iframe src="https://dreamscenter.com/player?url=[link do filmu]&color=[twój kolor]&opening=00;20-01;30"
         allowfullscreen
         allow="clipboard-write"
         width="747" height="420"/>
