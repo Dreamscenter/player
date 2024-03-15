@@ -94,11 +94,11 @@ window.addEventListener('message', (event) => {
          iframe.contentWindow.postMessage('dreamscenter/v1/player/progress/listen', '*');
          break;
      case 'dreamscenter/v1/player/position':
-        // playback position as milliseconds
+        // playback position in milliseconds
         console.log(`Position: ${event.data.value}`);
         break;
      case 'dreamscenter/v1/player/duration':
-        // duration of the video as milliseconds
+        // duration of the video in milliseconds
         console.log(`Duration: ${event.data.value}`);
         break;
      case 'dreamscenter/v1/player/progress':
