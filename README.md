@@ -79,3 +79,31 @@ By wyświelić przycisk pomijania czołówki dodaj również czas jej rozpoczęc
 ```
 
 Użycie atrybutu `opening=00;20-01;30` spowoduje, że przycisk pomijania czołówki pokaże się w 20 sekundzie filmu, a naciśnięcie go spowoduje przewinięcie do czasu 01:30.
+
+### Pozyskiwanie informacji o stanie odtwarzania
+Strona osadzająca iframe Dreamscenter, może uzyskać dostęp do informacji dotyczących stanu odtwarzacza.
+
+Przykładowy kod:
+```js
+const iframe = document.querySelector('iframe.dreamscenter');
+window.addEventListener('message', (event) => {
+   switch (event.data.type) {
+      case 'dreamscenter/v1/player/ready':
+         iframe.contentWindow.postMessage('dreamscenter/v1/player/position/listen', '*');
+         iframe.contentWindow.postMessage('dreamscenter/v1/player/duration/listen', '*');
+         iframe.contentWindow.postMessage('dreamscenter/v1/player/progress/listen', '*');
+         break;
+     case 'dreamscenter/v1/player/position':
+        console.log(`Position: ${event.data.value}`);
+        break;
+     case 'dreamscenter/v1/player/duration':
+        console.log(`Duration: ${event.data.value}`);
+        break;
+     case 'dreamscenter/v1/player/progress':
+        console.log(`Progress: ${event.data.value}`);
+        break;
+   }
+});
+```
+
+By przestać nasłuchać danej wartości: `iframe.contentWindow.postMessage('dreamscenter/v1/player/position/stopListening', '*');` 
