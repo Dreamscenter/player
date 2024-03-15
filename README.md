@@ -94,12 +94,15 @@ window.addEventListener('message', (event) => {
          iframe.contentWindow.postMessage('dreamscenter/v1/player/progress/listen', '*');
          break;
      case 'dreamscenter/v1/player/position':
+        // playback position as milliseconds
         console.log(`Position: ${event.data.value}`);
         break;
      case 'dreamscenter/v1/player/duration':
+        // duration of the video as milliseconds
         console.log(`Duration: ${event.data.value}`);
         break;
      case 'dreamscenter/v1/player/progress':
+        // floating-point number representing progress percentage (e.g. 0.37 if the video has been watched in 37%)
         console.log(`Progress: ${event.data.value}`);
         break;
    }
